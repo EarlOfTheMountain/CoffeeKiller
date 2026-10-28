@@ -1,0 +1,33 @@
+/* The page is just a black stage; the 320x180 canvas is the whole show.
+   CSS upscales it with nearest-neighbor so pixels stay crisp. */
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #0b0d10;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Courier New', monospace;
+}
+
+canvas {
+  width: min(96vw, calc(96vh * 16 / 9));
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #000;
+}

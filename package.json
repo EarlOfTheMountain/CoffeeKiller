@@ -1,0 +1,28 @@
+{
+  "name": "coffee-killer",
+  "version": "0.1.0",
+  "description": "The Coffee Killer — a light Zelda-like comedy where you survive a zombie apocalypse on caffeine.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "assets": "python3 scripts/generate_assets.py",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.0",
+    "eslint": "^9.30.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.0",
+    "vite": "^7.1.0"
+  }
+}
